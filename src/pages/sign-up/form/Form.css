@@ -1,0 +1,78 @@
+.form-inputs p {
+    color: red;
+    font-size: 12px;
+}
+
+.form {
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+label {
+    font-weight: 600;
+}
+
+.form-content-left {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 60px;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input {
+    padding: 10px;
+    border: 1px rgba(128, 128, 128, 0.555) solid;
+    border-radius: 5px;
+}
+
+.form-input-btn {
+    background-color: rgba(12, 9, 175, 0.761);
+    color: white;
+}
+
+.form-input-login {
+    text-align: center;
+}
+
+.success {
+    background-color: rgba(7, 7, 7, 0.912);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.form-success-container p {
+    text-align: center;
+    color: white;
+}
+
+.form-success-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-success-container img {
+    width: 400px;
+}
+
+.ask {
+    display: flex;
+    gap: 10px;
+}
+
+.ask p a {
+    text-decoration: underline;
+    font-weight: 600;
+}

@@ -1,0 +1,132 @@
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    padding: 13px 15px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+ul li a {
+    color: black;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+ul li a:hover {
+    color: rgb(112, 109, 109);
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 20px;
+}
+
+.menu-item {
+    display: none;
+}
+
+.nav-links-btns {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.btns {
+    display: flex;
+    gap: 10px;
+}
+
+.btns .trans-btn {
+    background-color: transparent;
+}
+
+.btns .trans-btn:hover {
+    background-color: rgb(223, 223, 223);
+}
+
+.btns .blue-btn {
+    background-color: rgb(67, 67, 211);
+    color: white;
+}
+
+.btns .blue-btn:hover {
+    background-color: rgb(47, 47, 235);
+}
+
+
+@media screen and (max-width: 820px) {
+
+    .menu-item {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+    }
+
+    .mobile-container {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-links-btns {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: white;
+        padding: 60px 0;
+        z-index: 111;
+        width: 100%;
+        opacity: 0;
+        transition: all 0.9s ease;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-links-btns.active {
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 111;
+        display: flex;
+        margin-top: 30px;
+        background-color: rgb(245, 244, 237);
+        margin-bottom: -10px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        /* margin-bottom: 10px; */
+    }
+
+    .btns {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        width: 60%;
+    }
+
+}

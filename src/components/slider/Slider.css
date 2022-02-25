@@ -1,0 +1,72 @@
+.sliders {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    margin: 50px 0;
+}
+
+.sliders-container {
+    display: flex;
+    width: 90%;
+    gap: 40px;
+    overflow-x: auto;
+}
+
+.sliders-container::-webkit-scrollbar {
+    width: 0;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px rgb(216, 212, 212) solid;
+    border-radius: 5px;
+    min-width: 50%;
+}
+
+.card button {
+    width: 100%;
+    color: rgba(55, 36, 141, 0.933);
+    border: 1px rgb(218, 216, 216) solid;
+    background-color: transparent;
+    margin-top: 10px;
+}
+
+.card button:hover {
+    background-color: rgba(12, 12, 192, 0.213);
+    color: white;
+}
+
+.testimony {
+    line-height: 23px;
+    width: 90%;
+}
+
+.top-part-card {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.top-part-card div p {
+    font-weight: 600;
+    color: rgba(55, 36, 141, 0.933);
+}
+
+.top-part-card span {
+    font-weight: lighter;
+    font: 14px;
+}
+
+@media screen and (max-width: 820px) {
+    .sliders-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 90%;
+    }
+}

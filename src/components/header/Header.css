@@ -1,0 +1,167 @@
+header {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    padding: 20px;
+    margin-bottom: 100px;
+    z-index: 1;
+}
+
+.landing {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 5px;
+}
+
+.ratings {
+    display: flex;
+    border: 2px red solid;
+}
+
+.stars {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.reviews-no {
+    font-weight: 300;
+    margin-left: 10px;
+}
+
+.trial-example {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.trial-example span {
+    border-bottom: 2px rgb(43, 40, 221) solid;
+    color: rgb(43, 40, 221);
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.blue-btn {
+    background-color: rgb(76, 58, 182);
+    color: white;
+}
+
+.blue-btn:hover {
+    background-color: rgb(172, 172, 172);
+}
+
+.checks {
+    display: flex;
+    gap: 20px;
+    color: rgb(70, 68, 68);
+}
+
+.checks div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.hero-illustration {
+    width: 520px;
+    margin-top: -40px;
+}
+
+.landing h1 {
+    font-size: 48px;
+    min-width: 80%;
+}
+
+.landing p {
+    line-height: 25px;
+    color: rgb(83, 83, 83);
+}
+
+.checkmark:hover {
+    border: 3px white solid;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1050px) {
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .landing {
+        align-items: center;
+    }
+
+    .landing p {
+        text-align: center;
+    }
+
+    .landing h1 {
+        text-align: center;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+
+    header {
+        margin-bottom: 10px;
+    }
+
+    .landing {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 5px;
+        align-items: flex-start;
+    }
+
+    .landing p {
+        text-align: left;
+    }
+
+    .landing h1 {
+        text-align: left;
+    }
+
+    .hero-illustration {
+        width: 450px;
+    }
+
+    .stars {
+        display: none;
+    }
+
+    .landing p {
+        width: 90%;
+    }
+
+    .trial-example {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+        margin: 15px 0;
+    }
+
+    .trial-example button {
+        width: 100%;
+        padding: 22px;
+    }
+
+    .checks {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 443px) {
+    .hero-illustration {
+        width: 277px;
+    }
+}

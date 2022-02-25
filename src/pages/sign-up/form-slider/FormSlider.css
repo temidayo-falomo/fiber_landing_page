@@ -1,0 +1,32 @@
+.form-slider {
+    /* border: 3px yellow solid; */
+    background-color: rgba(32, 14, 138, 0.808);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-slider img {
+    width: 70%;
+}
+
+.form-slider h1 {
+    color: white;
+}
+
+.form-slider p {
+    width: 50%;
+    text-align: center;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.829);
+}
+
+@media screen and (max-width: 800px) {
+    .form-slider {
+        display: none;
+    }
+}
